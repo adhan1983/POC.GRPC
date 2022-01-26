@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Repo.POC.GRPC.Client.Service.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,14 +19,23 @@ namespace Repo.POC.GRPC.Client.Api.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        private readonly IEmployeeService _employeeService;
+
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IEmployeeService employeeService)
         {
             _logger = logger;
+            _employeeService = employeeService;
         }
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            var reply = _employeeService.
+                        InsertEmployee(new Service.Dtos.EmployeeInsertDto { Name = "Adhan Oliveira", Email = "adhan.maldonado@gmail.com" });
+                        
+
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

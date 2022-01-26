@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "Repo.POC.GRPC.Server.GrpcService";
+option csharp_namespace = "GrpcGreeterClient";
 
 package greet;
 

@@ -8,4 +8,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Repo.POC.GRPC.Client.Service\Repo.POC.GRPC.Client.Service.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Repo.POC.GRPC.Client.Service.Interface;
+using Repo.POC.GRPC.Client.Service.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +30,9 @@ namespace Repo.POC.GRPC.Client.Api
         {
 
             services.AddControllers();
+
+            services.AddScoped<IEmployeeService, EmployeeService>();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Repo.POC.GRPC.Client.Api", Version = "v1" });

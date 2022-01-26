@@ -3,3 +3,14 @@
 ################################################################################
 
 /Server/Repo.POC.GRPC.Server/Repo.POC.GRPC.Server.GrpcService/bin/Debug/net5.0
+/Server/Repo.POC.GRPC.Server/Repo.POC.GRPC.Server.GrpcService/obj
+/Server/Repo.POC.GRPC.Server/.vs/Repo.POC.GRPC.Server
+/Server/Repo.POC.GRPC.Server/Repo.POC.GRPC.Server.Repository/bin/Debug/net5.0
+/Server/Repo.POC.GRPC.Server/Repo.POC.GRPC.Server.Repository/obj
+/Server/Repo.POC.GRPC.Server/Repo.POC.GRPC.Server.Service/obj
+/Server/Repo.POC.GRPC.Server/Repo.POC.GRPC.Server.Service/bin/Debug/net5.0
+/Client/Repo.POC.GRPC.Client/Repo.POC.GRPC.Client.Api/bin/Debug/net5.0
+/Client/Repo.POC.GRPC.Client/Repo.POC.GRPC.Client.Api/obj
+/Client/Repo.POC.GRPC.Client/.vs/Repo.POC.GRPC.Client
+/Client/Repo.POC.GRPC.Client/Repo.POC.GRPC.Client.Service/obj
+/Client/Repo.POC.GRPC.Client/Repo.POC.GRPC.Client.Service/bin/Debug/net5.0

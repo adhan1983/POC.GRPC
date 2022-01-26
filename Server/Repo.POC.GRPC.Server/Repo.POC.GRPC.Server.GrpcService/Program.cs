@@ -1,10 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+using Repo.POC.GRPC.Server.GrpcService.Extensions;
 
 namespace Repo.POC.GRPC.Server.GrpcService
 {
@@ -12,7 +8,10 @@ namespace Repo.POC.GRPC.Server.GrpcService
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).
+                Build().
+                MigrateDatabase().
+                Run();
         }
 
         // Additional configuration is required to successfully run gRPC on macOS.
