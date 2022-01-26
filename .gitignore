@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Server/Repo.POC.GRPC.Server/Repo.POC.GRPC.Server.GrpcService/bin/Debug/net5.0
